@@ -1,0 +1,97 @@
+{
+	"index.html": {
+		"resources": [
+			"images/activity-item.jpg",
+			"images/banner2.jpg",
+			"css/bootstrap.css",
+			"js/jquery.min.js",
+			"css/main.css",
+			"images/banner1.jpg",
+			"css/iconfont.css",
+			"images/banner3.jpg",
+			"js/bootstrap.js",
+			"css/swiper.min.css",
+			"js/swiper.min.js",
+			"images/club-img.jpg",
+			"shenpiliebiao.html",
+			"huodongxiangce.html"
+		],
+		"refer": [
+			"shenpiliebiao.html",
+			"huodongxiangce.html"
+		]
+	},
+	"shenpiliebiao.html": {
+		"resources": [
+			"css/bootstrap.css",
+			"css/main.css",
+			"js/fenye.chushihua.js",
+			"js/jquery.jqpagination.min.js",
+			"css/iconfont.css",
+			"images/return-top.png",
+			"css/jqpagination.css",
+			"shenpi-detail.html"
+		],
+		"refer": [
+			"shenpi-detail.html"
+		]
+	},
+	"shenpi-detail.html": {
+		"resources": [
+			"css/bootstrap.css",
+			"css/main.css",
+			"css/iconfont.css",
+			"css/jqpagination.css"
+		]
+	},
+	"hdxc-detail.html": {
+		"resources": [
+			"images/close.png",
+			"images/help2.png",
+			"css/main.css",
+			"js/photoswipe.min.js",
+			"video/mov_bbb.mp4",
+			"css/jqpagination.css",
+			"css/default-skin.css",
+			"images/proLzc3.png",
+			"video/video.mp4",
+			"js/shoujitupian.js",
+			"images/help3.png",
+			"js/photoswipe-ui-default.min.js",
+			"css/photoswipe.css",
+			"css/bootstrap.css",
+			"images/help1.png",
+			"css/reset.css",
+			"css/iconfont.css",
+			"js/jquery.min.js",
+			"js/fenye.chushihua.js",
+			"js/jquery.jqpagination.min.js",
+			"js/bootstrap.js",
+			"images/news-more-item.jpg",
+			"images/video-bg.jpg",
+			"images/hudong-item.jpg",
+			"images/weixinqun-top.jpg"
+		]
+	},
+	"huodongxiangce.html": {
+		"resources": [
+			"images/report-item.jpg",
+			"hdxc-detail.html",
+			"images/news-more-item.jpg",
+			"css/jqpagination.css",
+			"images/news-detail.jpg",
+			"css/reset.css",
+			"css/bootstrap.css",
+			"css/main.css",
+			"js/fenye.chushihua.js",
+			"js/jquery.jqpagination.min.js",
+			"css/iconfont.css",
+			"images/return-top.png",
+			"js/jquery.min.js",
+			"js/bootstrap.js"
+		],
+		"refer": [
+			"hdxc-detail.html"
+		]
+	}
+}

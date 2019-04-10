@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/jqpagination.css">
+	<link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+    
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+ 
+</head>
+<body>
+        <div class='school-help-title-box'>
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>财务公示<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+        </div>
+    <!-- 展示页面列表
+    当前余额 收支类型（收入或者支出） 金额  详情描述 经手人 日期 收支后余额 -->
+<div class="money-show-box">
+                    <div class="money-show-title">财务明细</div>
+                    <ul class="money-show-list">
+                        <!-- <li>
+                            <a href="show-money-detail.html">
+                                <span class="fl">收入</span>
+                                <span>￥2323.00</span>
+                                <span class="fr">2018/01/02 14:00</span>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="">
+                                    <span class="fl">支出</span>
+                                    <span>￥-2323.67</span>
+                                    <span class="fr">2018/01/02 13:00</span>
+                                </a>
+                            </li> -->
+                    <li class="clearfix shouzhi-title">
+                                <span>收支类型</span>
+                                <span>金额</span>
+                                <span>余额</span>
+                                <span>经手人</span>
+                                <span>收支日期</span>
+                        </li>
+
+                        <li class="clearfix">
+                                <a href="show-money-detail.html" style="display:block">
+                                    <span>收入</span>
+                                    <span>￥23245</span>
+                                    <span>454565</span>
+                                    <span>张某某</span>
+                                    <span>2017-05</span>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                    <a href="show-money-detail.html" style="display:block">
+                                        <span>收入</span>
+                                        <span>￥23245</span>
+                                        <span>454565</span>
+                                        <span>张某某</span>
+                                        <span>2017-05</span>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                        <a href="show-money-detail.html" style="display:block">
+                                            <span>收入</span>
+                                            <span>￥23245</span>
+                                            <span>454565</span>
+                                            <span>张某某</span>
+                                            <span>2017-05</span>
+                                        </a>
+                                    </li>
+                    </ul>
+</div><!--e=money-show-box财务公示 -->
+
+ <!-- <p class="no-more">没有更多了....</p> -->
+ <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(window).scrollTop()>=60){
+                        $("#gotop").fadeIn();
+                    }
+                    else{
+                        $("#gotop").fadeOut(); 
+                    }
+                }
+            );
+            $("#gotop").click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            })
+        })
+    </script>
+     <script src="js/jquery.jqpagination.min.js"></script>
+     <script src="js/fenye.chushihua.js"></script>
+</body>
+
+</html>

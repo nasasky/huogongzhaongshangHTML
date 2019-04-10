@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/jqpagination.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body style="background:#fff">
+        <div class='school-help-title-box'>
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>理事会务<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+        </div>
+    <!-- news-more -->
+    <div class="news-more-box">
+    <div class="top-search"><span class="fa fa-search"></span><input type="text" placeholder="请输入会议关键字"></div>
+
+        <div class="vote-item"><a href="huiwuxitong-detail.html">
+            <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+            <p>会议类型：线上会议</p>
+            <p>起止时间：2017-10-11～11-11<span><i>4</i>人投票</span></p>
+        </a></div>
+        <div class="vote-item"><a href="">
+                <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                <p>会议类型：线下会议</p>
+                <p>起止时间：2017-10-11～11-11<span><i>34</i>人投票</span></p>
+            </a></div>
+            <div class="vote-item"><a href="">
+                    <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                    <p>会议类型：线上线下同步会议</p>
+                    <p>起止时间：2017-10-11～11-11<span><i>54</i>人投票</span></p>
+                </a></div>
+                <div class="vote-item"><a href="">
+                        <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                        <p>会议类型：当前状态</p>
+                        <p>起止时间：2017-10-11～11-11<span><i>33</i>人投票</span></p>
+                    </a></div>
+                    <div class="vote-item"><a href="">
+                            <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                            <p>会议类型：线上会议</p>
+                            <p>起止时间：2017-10-11～11-11<span><i>88</i>人投票</span></p>
+                        </a> </div>
+                        <div class="vote-item"><a href="">
+                                <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                                <p>会议类型：线上会议</p>
+                                <p>起止时间：2017-10-11～11-11<span><i>88</i>人投票</span></p>
+                            </a> </div>
+                            <div class="vote-item"><a href="">
+                                    <h3>你想为您的生活和事业提供哪些方面的支持与服务？</h3>
+                                    <p>会议类型：线上会议</p>
+                                    <p>起止时间：2017-10-11～11-11<span><i>88</i>人投票</span></p>
+                                </a></div>
+
+                                <div id="wrapper" >
+                                        <div class="gigantic pagination">
+                                            <a href="#" class="first" data-action="first">首页</a>
+                                            <a href="#" class="previous" data-action="previous">上页</a>
+                                            <input type="text" readonly="readonly" value="第几页"/>
+                                            <a href="#" class="next" data-action="next">下页</a>
+                                            <a href="#" class="last" data-action="last">末页</a>
+                                        </div>
+                                        <div class="clearfix"></div> <!-- should probably have a shower after that -->
+                                        <div style="text-align:center;clear:both;margin-top:50px"></div>
+                                </div>
+    </div>  
+    <!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(window).scrollTop()>=60){
+                        $("#gotop").fadeIn();
+                    }
+                    else{
+                        $("#gotop").fadeOut(); 
+                    }
+                }
+            );
+            $("#gotop").click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            })
+        })
+    </script>
+    <!-- news-more-box-->
+    <!-- <footer>
+            <p>地址：广东省中山国发股份规范</p>
+            <p> 京ICP备546576767号-6 &copy;版权所有:华工中山校友会</p>
+        </footer> -->
+        <script src="js/jquery.jqpagination.min.js"></script>
+        <script src="js/fenye.chushihua.js"></script>
+</body>
+</html>

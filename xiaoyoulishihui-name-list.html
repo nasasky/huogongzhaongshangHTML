@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/jqpagination.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+ 
+</head>
+<body style="background:#fff">
+        <div class='school-help-title-box'>
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>校友理事会名单<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+        </div>
+<!-- 校友理事会名单 -->
+<div class="lishihui-name-list-box"> 
+
+    <div class="lishihui-name-list-title">华工中山校友会第七届理事会名单<p>（2017年11月25日，华工中山校友总会第七届理事会第三次会议通过）</p></div>
+    <div class="lishihui-name-list-content">
+        <p>会长：邱勇</p>
+        <p>副会长：陈旭（女）、石宗凯、胡东成、白用以（女）</p>
+        <p>秘书长：唐静</p>
+        <p>副秘书长：张伟、陈魏霞（女）、张乐</p>
+        <p>常务理事<i>（按照入学年限排序，同年级按姓名拼音排序，共计20名）:</i><br />徐荣凯、白永毅（女）、胡东成、陈希、邓勇、李当岐、张廷克、宋军、吴郁龙、宫力、胡和平、史宗恺、陈旭（女）、陈吉宁、郭樑、李山、郭谦、贺臻、邱勇、方方、束为、唐杰、杨岳、胡钰、周云帆、杜汇良</p>
+        <p class="lishi-mingdan"><b>理事名单：</b><i>（以毕业或入学时间先后为序，同年级按姓名拼音为序，共计73名）：</i></p>
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>入学年份</td>
+                <td>系别</td>
+            </tr>
+            <tr>
+                <td>张伟张伟</td>
+                <td>1961届</td>
+                <td>热能系</td>
+            </tr>
+            <tr>
+                    <td>张伟</td>
+                    <td>1961届</td>
+                    <td>热能系</td>
+                </tr>
+                <tr>
+                        <td>张伟</td>
+                        <td>1961届</td>
+                        <td>热能系热能系热能系热能系</td>
+                    </tr>
+                    <tr>
+                            <td>张伟</td>
+                            <td>1961届</td>
+                            <td>热能系</td>
+                        </tr>
+                        <tr>
+                                <td>张伟</td>
+                                <td>1961届</td>
+                                <td>热能系</td>
+                            </tr>
+            
+        </table>
+    </div><!--lishihui-name-list-content-->
+
+    <div id="wrapper">
+			<div class="gigantic pagination">
+			    <a href="#" class="first" data-action="first">首页</a>
+			    <a href="#" class="previous" data-action="previous">上页</a>
+			    <input type="text" readonly="readonly" value="第几页"/>
+			    <a href="#" class="next" data-action="next">下页</a>
+			    <a href="#" class="last" data-action="last">末页</a>
+			</div>
+			<div class="clearfix"></div> <!-- should probably have a shower after that -->
+			<div style="text-align:center;clear:both;margin-top:50px">
+    </div>
+</div><!-- lishihui-name-list-box -->
+
+<!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(window).scrollTop()>=60){
+                        $("#gotop").fadeIn();
+                    }
+                    else{
+                        $("#gotop").fadeOut(); 
+                    }
+                }
+            );
+            $("#gotop").click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            })
+        })
+    </script>
+     <script src="js/jquery.jqpagination.min.js"></script>
+     <script src="js/fenye.chushihua.js"></script>
+</body>
+</html>

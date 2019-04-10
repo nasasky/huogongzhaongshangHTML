@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body style="background:#fff">
+    <div class="school-help-title-box">
+        <div class="school-help-title">
+            <a href="javascript:history.back()" class="iconfont icon-fanhui return"></a>关于我们
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <div class="school-help-box">
+
+        <ul class="school-help-list">
+            <li><a href="linkus.html"><span class="iconfont icon-tel7"></span>联系我们<i class="iconfont icon-angle"></i></a></li>
+            <li><a href="weixinqun.html"><span class="iconfont icon-weixin"></span>微信群<i class="iconfont icon-angle"></i></a></li>
+            <li><a href="money-show.html"><span class="iconfont icon-money1"></span>财务公示<i class="iconfont icon-angle"></i></a></li>
+            <li><a href=""><span class="iconfont icon-money6"></span>财务审批<i class="iconfont icon-angle"></i></a></li>
+        </ul>
+    </div>
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+</body>
+
+</html>

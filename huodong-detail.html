@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>活动详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <!-- 活动详情开始 -->
+    <div class="huodong-detail-box">
+        <div class="huodong-detail-main">
+            <div class="huodong-detail-top">
+                <img src="images/hudong-item.jpg" alt="">
+                <div class="show-share"><span>浏览：<i>50</i></span><span>分享：<i>22</i></span></div>
+            </div>
+            <!-- huodong-detail-top -->
+
+            <div class="huodong-item-title">周三晚上朝阳大学校友会</div>
+            <p class="fanwei"><span>范围：仅成员</span><span>名额：14人</span><span>费用：<i>&yen;20-30</i></span></p>
+            <!-- 填了比赛对方，则要显示出来 -->
+            <p class="fanwei"><span>比赛对方：</span>中国足球队</p>
+            <div class="time-local">
+                <p><span class="iconfont icon-icon03"></span>17-11-01 20:10 ～ 17-11-01 22:20</p>
+                <p><span class="iconfont icon-map1"></span>新世界文昌换届大会发动机1号场地</p>
+            </div>
+            <!-- time-local -->
+
+            <div class="touxaing">
+                <a href="member-detail.html">
+                    <div class="touxiang-img">
+                        <img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt="">                        <img src="images/touxiang.jpg" alt="">
+                        <img src="images/touxiang.jpg" alt=""> <img src="images/touxiang.jpg" alt="">
+                    </div>
+                    <i class="iconfont icon-gengduo"></i>
+                    <span>12人</span>
+                </a>
+            </div>
+            <!-- touxaing -->
+
+        </div>
+        <!-- huodong-detail-main -->
+
+        <div class="faqiren">
+            <ul>
+                <li class="faqiren-title">中山华工中山校友会</li>
+                <li><span>俱乐部：</span>羽毛球俱乐部</li>
+                <li><span>发起人：</span>张三</li>
+                <li><span>联系电话：</span>123456789</li>
+            </ul>
+        </div>
+        <!-- faqiren -->
+
+        <div class="huodongjieshao">
+            <div class="huodongjieshao-title"><span>活动介绍</span><s>展开<i class="iconfont icon-angledown2"></i></s></div>
+            <div class="huodongjieshao-txt">
+                <p>1、本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用</p>
+                <p>2、活动时间、场地：每周三晚上8-10点，综合楼2楼1、3号2片场地。</p>
+                <p>建议大家至少提前10分钟到场热身。</p>
+                <p>3、活动费用：男30元，女20元。请大家自备零钱，或支付宝打入13957133578郑炜。</p>
+                <p>4、为保证大家打球时间，请大家报名参与。报名的同学如要取消，请在当日晚上6点前联系组织者 。不支持空降，除非事先征得组织者同意，否则空降兵付费+10元。鸽子请自觉支付鸽子费10元。</p>
+                <p>5、开车的从河东路拐到华园弄，再左拐到文昌巷进西南门。请注意，华园弄是西向东、文昌巷是南向北的单行线。校内免费停车。</p>
+                <p>6、联系电话：13957133578郑炜（长老）</p>
+                <p>7、前来打球的新同学请实名+年级专业加入ZJU-杭州校友会羽毛球群79806050</p>
+            </div>
+            <script type="text/javascript">
+                $(function() {
+                    $(".huodongjieshao-title").click(function() {
+                        if ($(".huodongjieshao-title s").text() == "收起") {
+                            $(".huodongjieshao-title s").text("展开");
+                            $(".huodongjieshao-txt").slideDown('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angledown2'></i>")
+                        } else {
+                            $(".huodongjieshao-title s").text("收起");
+                            $(".huodongjieshao-txt").slideUp('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angle-up'></i>")
+                        }
+
+                    })
+                })
+            </script>
+        </div>
+        <!-- huodongjieshao 活动介绍-->
+
+        <div class="huodong-lueying clearfix">
+            <div class="huodong-lueying-top">
+                <a href="huodonglueying.html">
+                    <span>活动掠影</span><i class="iconfont icon-gengduo"></i><b>共12张</b>
+                </a>
+            </div>
+            <div class="huodong-lueying-content">
+                <a href="huodonglueying.html">
+                    <ul>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <!--活动掠影的图片尺寸为：500*400-->
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                    </ul>
+                </a>
+            </div>
+            <!--  huodong-lueying-content -->
+        </div>
+        <!-- 活动掠影 huodong-lueying -->
+
+    </div>
+    <!-- 活动详情结束 -->
+
+    <!-- <div class="login-baoming">
+        <div class="mysports"><a href=""><span class="fa fa-home"></span><i>我的活动</i></a></div>
+        <div class="denglubaoming"><a href="baoming-huodong.html">报名活动</a></div>
+    </div> -->
+    <!-- <div class="fabu-btn">
+        <a class="fabu-btn-share" href="index.html"><span class="iconfont icon-shouye home-tubiao"></span><i>首页</i></a>
+        <a class="fabu-btn-share"><span class="iconfont icon-seeusero"></span><i>我的</i></a>
+        <a class="fabu-btn-share"><span class="iconfont icon-shares"></span><i>分享</i></a>
+        <a href="baoming-huodong.html" class="wo-fabu">报名活动</a>
+    </div> -->
+    <div class="login-baoming">
+        <div class="fabu"><a href="baoming-huodong.html">报名活动</a></div>
+    </div>
+
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+</body>
+
+</html>

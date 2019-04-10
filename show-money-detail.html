@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body style="background:#fff">
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>财务详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <!-- 展示页面列表
+    当前余额 收支类型（收入或者支出） 金额  详情描述 经手人 日期 收支后余额 -->
+    <div class="show-money-detail-box">
+        <!-- <div class="show-money-detail-top">
+        <h3>2017年上季度慈善部门收入明细2017年上季度慈善部门收入明细2017年上季度慈善部门收入明细</h3>
+        <p>收支类型：收入<span>当前余额：123万整</span></p>
+        <p>经手人：张某<span>收支后余额：20万</span></p>
+    </div>
+
+    <div class="huodongjieshao">
+            <div class="huodongjieshao-title"><span>详情描述</span><s>展开<i class='iconfont icon-gengduo'></i></s></div>
+            <div class="huodongjieshao-txt">
+                 <p>捐赠收入：45,196,910.57元</p>
+                 <p>其中：限定“薪火爱心基金”项目5,064,280.85元</p>
+                <p>限定“远东宏信公益基金”项目11,823,043.30元</p>
+                <p>限定“康联慈善基金”项目2,547,596元</p> 
+                <p>限定“阳光爱自闭症教育基金”项目346,935元</p>
+                  <p>限定“泰格医学基金”项目5,970,000元</p>
+            </div>
+            <script type="text/javascript">
+                $(function(){
+                    $(".huodongjieshao-title").click(function(){
+                        if($(".huodongjieshao-title s").text()=="收起"){
+                            $(".huodongjieshao-title s").text("展开");
+                            $(".huodongjieshao-txt").slideDown('slow');
+                            $(".huodongjieshao-title s").append("<i class='fa fa-angle-down'></i>")
+                        }
+                        else{
+                            $(".huodongjieshao-title s").text("收起");
+                            $(".huodongjieshao-txt").slideUp('slow');
+                            $(".huodongjieshao-title s").append("<i class='fa fa-angle-up'></i>")
+                        }
+                            
+                    })
+                })
+           </script>
+    </div>
+
+<div class="huodong-lueying clearfix">
+        <div class="huodong-lueying-top">
+            <a href="huodonglueying.html">
+            <span>活动掠影</span><i class="iconfont icon-gengduo"></i><b>共12张</b>
+           </a>
+       </div>
+       <div class="huodong-lueying-content">
+           <a href="huodonglueying.html">
+               <ul>
+                   <li><img src="images/jianjie.jpeg" alt=""></li>活动掠影的图片尺寸为：500*400
+                   <li><img src="images/jianjie.jpeg" alt=""></li>
+                   <li><img src="images/jianjie.jpeg" alt=""></li>
+                   <li><img src="images/jianjie.jpeg" alt=""></li>
+               </ul>
+           </a>
+       </div>
+   </div> -->
+
+
+        <div class="money-show-title">财务明细</div>
+        <ul class="money-show-list money-show-list-detail">
+            <li class="clearfix">
+                <a href="">
+                    <span>当前余额:</span>
+                    <span>￥3000.00</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span>收支类型:</span>
+                    <span>收入</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span>金额:</span>
+                    <span>￥1000.00</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span>收支后余额:</span>
+                    <span>￥4000.00</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span>经手人:</span>
+                    <span>张某</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span>日期:</span>
+                    <span>2018/01/02 14:00</span>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <span style="width:24%;float:left">详情描述:</span>
+                    <div style="width:76%;" class="fl">详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述 详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述
+
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- show-money-detail-box 活动详情结束 -->
+
+
+    <!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+</body>
+
+</html>

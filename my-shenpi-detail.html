@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/jqpagination.css">
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>审批详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <!-- 活动开始 -->
+    <div class="shenpi-box">
+        <ul>
+            <li>
+                <span>费用类型</span><b>预算</b>
+            </li>
+            <li>
+                <span>内容描述</span><b>内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述</b>
+            </li>
+            <li>
+                <span>金额</span><b>100元</b>
+            </li>
+            <li>
+                <span>附件</span><b><a href="images/banner1.jpg">光宇荒废</a></b>
+            </li>
+            <li>
+                <span>申请时间</span><b>07-28&nbsp;&nbsp;10:32</b>
+            </li>
+        </ul>
+
+        <p class="chaxun-tit">进度查询</p>
+        <section class="time-container">
+            <div class="time-block">
+                <div class="time-img time-true"></div>
+                <div class="time-content clearfix">
+                    <img src="images/touxiang.jpg" alt="">
+                    <p class="shenqing-name">我</p>
+                    <p class="shening-statue">发起申请</p>
+                    <p class="shenqing-time">07-27 16:50:55</p>
+                </div>
+            </div>
+            <!-- e=time-block -->
+
+            <div class="time-block">
+                <div class="time-img time-true"></div>
+                <div class="time-content clearfix">
+                    <img src="images/touxiang.jpg" alt="">
+                    <p class="shenqing-name">张三</p>
+                    <p class="shening-statue">同意</p>
+                    <p class="shenqing-time">07-28 16:50:55</p>
+                </div>
+            </div>
+            <!-- e=time-block -->
+
+            <div class="time-block">
+                <div class="time-img"></div>
+                <div class="time-content clearfix">
+                    <img src="images/touxiang.jpg" alt="">
+                    <p class="shenqing-name">李四</p>
+                    <p class="shening-statue">待审核</p>
+                    <!-- <p class="shenqing-time">07-27 16:50:55</p> -->
+                </div>
+            </div>
+            <!-- e=time-block -->
+        </section>
+        <!-- e=time-container -->
+    </div>
+    <!-- 活动结束 huodong-box-->
+
+    <!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+
+    <script src="js/jquery.jqpagination.min.js"></script>
+    <script src="js/fenye.chushihua.js"></script>
+</body>
+
+</html>

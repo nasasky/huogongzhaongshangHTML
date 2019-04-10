@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+ 
+</head>
+<body style="background:#fff">
+<!-- 校友互助系统（已认证的校友方可打开） 已登录未认证的校友，点开此菜单弹出提示你目前未通过认证 并显示 让其他校友为你证实 按钮页面分
+未登陆的校友，点开此菜单弹出登录注册界面 
+登陆后的已认证校友 
+显示以下信息列表及链接可以点击进入 点击进入后每页上方也有模糊输入查询  以及查询按钮 -->
+<div class='school-help-title-box'>
+<div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>校友互助系统<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+</div>
+<div class="school-help-box">
+    
+    <ul class="school-help-list">
+        <li><a href="xiaoyoulu-search.html"><span class="iconfont icon-us"></span>全体中山校友录及搜索求助<i class="iconfont icon-angle"></i></a></li>
+        <li><a href="xiaoyouqiuzhu-xinxi-chakan.html"><span class="iconfont icon-see_more"></span>校友求助信息发布查看<i class="iconfont icon-angle"></i></a></li>
+        <li><a href="xiaoyoulishihui-name-list.html"><span class="iconfont icon-iconfontname2"></span>中山校友理事会名单<i class="iconfont icon-angle"></i></a></li>
+        <li><a href="xiaoyouhuizhangcheng.html"><span class="iconfont icon-noticegonggao"></span>中山校友会章程<i class="iconfont icon-angle"></i></a></li>
+        <li><a href="gonggaotongzhi.html"><span class="iconfont icon-icyhbynotice"></span>中山校友会其他公告通知文件<i class="iconfont icon-angle"></i></a></li>
+       
+    </ul>
+</div>
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(window).scrollTop()>=60){
+                        $("#gotop").fadeIn();
+                    }
+                    else{
+                        $("#gotop").fadeOut(); 
+                    }
+                }
+            );
+            $("#gotop").click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            })
+        })
+    </script>
+</body>
+</html>

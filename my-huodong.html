@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> -->
+    <link rel="stylesheet" href="css/jqpagination.css">
+    <link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js" ></script> -->
+    <title>华工中山校友会</title>
+    <script>
+            $(function(){
+                $("#hear li").click(function(){
+                    $(this).css({
+                        borderBottom: "2px solid #2f80ed",
+                        height:"43px"
+                    }).siblings().css({
+                        borderBottom: "none",
+                        height:"45px"
+                    });
+                });					
+                    
+                $("#hear li").click(function(){
+                    $(this).addClass("action").siblings().removeClass("action");
+                    var index = $(this).index();
+                    $("#contentop li").eq(index).css("display","block").siblings().css("display","none");
+                });
+            });
+    </script>
+</head>
+<body>
+<div class='school-help-title-box'>
+    <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>活动<a class="iconfont icon-homel shouye" href="index.html" data-ajax="false"></a></div>
+</div>
+<div data-role="page">
+    <div data-role = "content-floud">			
+        <div style="font-family: '微软雅黑';">
+            <ul id="hear">
+                <li class="action" style="border-bottom: 2px solid #2f80ed;height: 43px;"><a href="#">进行中<span style="color: #2f80ed;">(4)</span></a></li>
+                <li><a href="#" >已结束<span style="color: #2f80ed;">(1)</span></a></li>
+                <li><a href="#" >已发起<span style="color: #2f80ed;">(2)</span></a></li>
+            </ul>
+            <ul id="contentop">
+                <li class="action">
+                    <div class="my-huodong clearfix">
+                        <div class="my-hongdong-left fl ">
+                            <a href="huodong-detail.html" data-ajax="false"> <img src="images/微信图片_20171114152533.jpg"></a>
+                        </div>
+                        <div class="my-huodong-right fr">
+                          <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                          <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                          <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                          <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                        </div>
+                </div>
+                  <div class="my-huodong clearfix">
+                        <div class="my-hongdong-left fl ">
+                            <a href="huodong-detail.html" data-ajax="false"> <img src="images/weixinqun-top.jpg"></a>
+                        </div>
+                        <div class="my-huodong-right fr">
+                          <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                          <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                          <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                          <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                        </div>
+                </div>
+                <div class="my-huodong clearfix">
+                    <div class="my-hongdong-left fl ">
+                        <a href="huodong-detail.html" data-ajax="false"> <img src="images/news-detail.jpg"></a>
+                    </div>
+                    <div class="my-huodong-right fr">
+                      <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                      <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                      <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                      <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                    </div>
+            </div>
+            <div class="my-huodong clearfix">
+                <div class="my-hongdong-left fl ">
+                    <a href="huodong-detail.html" data-ajax="false"> <img src="images/activity-item.jpg"></a>
+                </div>
+                <div class="my-huodong-right fr">
+                  <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                  <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                  <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                  <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                </div>
+        </div>
+
+
+                <div id="wrapper" style="margin-bottom:55px;">
+                    <div class="gigantic pagination">
+                        <a href="#" class="first" data-action="first">首页</a>
+                        <a href="#" class="previous" data-action="previous">上页</a>
+                        <input type="text" readonly="readonly" value="第几页"/>
+                        <a href="#" class="next" data-action="next">下页</a>
+                        <a href="#" class="last" data-action="last">末页</a>
+                    </div>
+                    <div class="clearfix"></div> <!-- should probably have a shower after that -->
+                    <div style="text-align:center;clear:both;margin-top:50px"></div>
+            </div>
+                </li>
+                <li>
+                    <div class="my-huodong clearfix">
+                        <div class="my-hongdong-left fl ">
+                            <a href="huodong-detail.html" data-ajax="false"> <img src="images/activity-item.jpg"></a>
+                        </div>
+                        <div class="my-huodong-right fr">
+                          <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                          <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                          <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                          <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                        </div>
+                </div>
+                </li>
+                <li>
+                    <div class="my-huodong clearfix">
+                        <div class="my-hongdong-left fl ">
+                            <a href="huodong-detail.html" data-ajax="false"> <img src="images/activity-item.jpg"></a>
+                        </div>
+                        <div class="my-huodong-right fr">
+                          <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                          <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                          <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                          <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                        </div>
+                </div>
+                <div class="my-huodong clearfix">
+                    <div class="my-hongdong-left fl ">
+                        <a href="huodong-detail.html" data-ajax="false"> <img src="images/activity-item.jpg"></a>
+                    </div>
+                    <div class="my-huodong-right fr">
+                      <div class="my-huodong-right-title"> <a href="huodong-detail.html" data-ajax="false">滨江周末狼人杀</a></div>
+                      <p><i class="map-icon iconfont icon-map1"></i>广东省中山市滨江区明园库咖啡馆</p>
+                      <p><i class="clock-icon iconfont icon-icon03"></i>11-04 13:30 周六</p>
+                      <p class="myhuodong-right-baoming"><i class="clock-icon iconfont  icon-about2"></i><a href="">报名明细</a></p>
+                    </div>
+            </div>
+                </li>
+            </ul>
+        </div>	
+        		
+    </div>	
+
+
+
+<script src="js/jquery.jqpagination.min.js"></script>
+<script src="js/fenye.chushihua.js"></script>
+</body>
+</html>
+

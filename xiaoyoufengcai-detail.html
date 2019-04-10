@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>校友详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <!-- news-detail-box-->
+    <div class="news-detail-box">
+        <div class="linkus-top">
+            <h2>校友风云人物：漩涡鸣人</h2>
+        </div>
+        <!-- e=linkus-top -->
+
+        <img src="images/news-detail-line.png" alt="" style="width:100%;margin:14px auto;">
+
+        <p>10月29日是第十二个“世界卒中日”，国家卫生计生委脑卒中防治工程委员会发出“预防卒中，你我同行”的号召。为积极响应这一号召，清华大学附属北京清华长庚医院神经内科主任武剑，带队科内14名医师、4名护士及3名技师，在医院门诊大厅，同时走进宏福苑社区卫生服务站，进行卒中健康宣讲和义诊活动。</p>
+        <p>10月29日是第十二个“世界卒中日”，国家卫生计生委脑卒中防治工程委员会发出“预防卒中，你我同行”的号召。为积极响应这一号召，清华大学附属北京清华长庚医院神经内科主任武剑，带队科内14名医师、4名护士及3名技师，在医院门诊大厅，同时走进宏福苑社区卫生服务站，进行卒中健康宣讲和义诊活动。</p>
+        <img src="images/news-detail.jpg" alt="">
+        <p>10月29日是第十二个“世界卒中日”，国家卫生计生委脑卒中防治工程委员会发出“预防卒中，你我同行”的号召。为积极响应这一号召，清华大学附属北京清华长庚医院神经内科主任武剑，带队科内14名医师、4名护士及3名技师，在医院门诊大厅，同时走进宏福苑社区卫生服务站，进行卒中健康宣讲和义诊活动。</p>
+    </div>
+
+    <!-- <div class="news-detail-share">
+        <span class="news-show"><b ><i class="fa fa-eye"></i></b>1245</span>
+        <span class="news-share"><b ><i class="fa fa-share-alt"></i></b>分享</span>
+    </div> -->
+    <!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+    <!-- <footer>
+            <p>地址：广东省中山国发股份规范</p>
+            <p> 京ICP备546576767号-6 &copy;版权所有:华工中山校友会</p>
+        </footer> -->
+</body>
+
+</html>

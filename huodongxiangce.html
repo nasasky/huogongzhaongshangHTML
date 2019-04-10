@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/jqpagination.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>活动相册
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+
+    <div class="hdxc-wrap">
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/news-detail.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/news-more-item.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/banner1.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/banner2.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/banner3.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+        <div class="hdxc-block">
+            <a href="hdxc-detail.html">
+                <div class="hdxc-block-top">
+                    <img src="images/report-item.jpg" alt="">
+                </div>
+                <span>实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</span>
+                <small>76张</small>
+            </a>
+        </div>
+        <!-- e=hdxc-block -->
+
+    </div>
+    <!-- e=hdxc-wrap -->
+
+
+
+    <div id="wrapper">
+        <div class="gigantic pagination">
+            <a href="#" class="first" data-action="first">首页</a>
+            <a href="#" class="previous" data-action="previous">上页</a>
+            <input type="text" readonly="readonly" value="第几页" />
+            <a href="#" class="next" data-action="next">下页</a>
+            <a href="#" class="last" data-action="last">末页</a>
+        </div>
+        <div class="clearfix"></div>
+        <!-- should probably have a shower after that -->
+        <div style="text-align:center;clear:both;margin-top:50px">
+        </div>
+    </div>
+    <!--xiaoyoulu-search-box-->
+
+    <!-- <p class="no-more">没有更多了....</p> -->
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+    <script src="js/jquery.jqpagination.min.js"></script>
+    <script src="js/fenye.chushihua.js"></script>
+</body>
+
+</html>

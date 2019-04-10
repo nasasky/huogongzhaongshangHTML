@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="laydate/laydate.js"></script>
+	<title>华工中山校友会</title>
+</head>
+<body style="background:#fff">
+<div class='school-help-title-box'>
+	<div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>登录/注册<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+</div>
+		<!-- 校友资料注册包括：手机号码（登录账号）、密码、确认密码
+		姓名、性别、入学年份、所学专业 现工作单位、担任职务、以上必选
+		可选：所属行业、兴趣爱好   -->
+<!-- 注册页面开始 -->
+<div class="register-box">
+	<div class="register-prompt">之前2017年5月13日中山校友会换届庆典邀请函填写提交过校友资料的试试直接登录，用户名是登记时候的手机号码，密码是他姓名的 小写拼音 比如 王小明 手机号码 13812345678 密码 wangxiaoming<a href="login.html" style="margin-left:12px;color:#2f80ed;text-decoration:underline;">点击登录</a></div><!-- prompt登录页面提示 -->
+	<div class="register-content">
+		<div class="login-item">
+			<p><b>*</b>手机号</p>
+			<input type="text" placeholder="请输入手机号">
+		</div>
+		<div class="login-item">
+			<p><b>*</b>密码</p>
+			<input type="text" placeholder="请输入6-16位密码">
+		</div>
+		<div class="login-item">
+			<p><b>*</b>确认密码</p>
+			<input type="text" placeholder="再次输入密码">
+		</div>
+		<div class="login-item">
+			<p><b>*</b>验证码</p>
+			<div class="yanzhengma">
+				<input type="text" placeholder="请输入短信验证码" style="width:45%">
+				<span>点击获取</span>
+			</div>
+		</div>
+		<div class="login-item">
+			<p><b>*</b>姓名</p>
+			<input type="text" placeholder="请输入真实姓名">
+		</div>
+		<div class="login-item">
+			<p><b>*</b>姓别：</p>
+			<label for=""><input type="radio" name="sex">男</label>
+			<label for=""><input type="radio" name="sex">女</label>
+		</div>
+		<div class="login-item">
+			<p><b>*</b>入学年份</p>
+			<input type="text" placeholder="请选择入学的时间" id="date-check1" readonly>
+		</div>
+		<div class="login-item">
+			<p><b>*</b>所学专业</p>
+			<input type="text" placeholder="请输入您的专业名称">
+		</div>
+		<div class="login-item">
+			<p><b>*</b>工作单位</p>
+			<input type="text" placeholder="请输入您的工作单位">
+		</div>
+		<div class="login-item">
+				<p><b>*</b>居住地址</p>
+				<input type="text" placeholder="请输入你居住或者工作的镇区如东区、小榄">
+			</div>
+		<div class="login-item">
+			<p><b>*</b>担任职务</p>
+			<input type="text" placeholder="请输入你目前工作单位担任的职务">
+		</div>
+		<div class="login-item">
+			<p style="width:25%">所属行业</p>
+			<input type="text" placeholder="请输入你从事的行业 如房地产、教育" style="width:75%">
+		</div>
+		<div class="login-item">
+			<p>兴趣爱好</p>
+			<input type="text" placeholder="请输入您的兴趣爱好">
+		</div>
+
+
+
+
+	</div>
+	<button class="register-btn">注&nbsp;&nbsp;册</button>
+
+	<div class="split">
+		<span>已有账号？点击此处立即登录</span>
+	</div>
+	
+	<a class="login-btn" href="login.html">登&nbsp;&nbsp;录</a>
+
+	<div class="register-footer">
+		温馨提示：注册完成后，点击页面右上角的分享按钮分享到微信群、微信朋友或者朋友圈，让已经认证通过的校友为你证实身份，有2个以上已经认证的校友为你证实身份，那么系统自动通过你的认证为已认证校友，如果无法找到可以跟校友秘书处联系审核通过认证，华工中山校友会小秘书微信号是zsscuters
+	</div>
+</div><!-- register-box -->
+<!-- 注册页面结束 -->
+<div id="register-share">
+	<p class="register-share-title">分享到朋友圈或微信好友让其他校友帮你证实</p>
+	<p class="share-desc">点击右上角的<span><img src="images/ellipsis.png" alt=""></span>分享</p>
+	<p class="other-share">其他分享</p>
+	<div id="share-clock-btn"></div>
+</div>
+<script>
+	$(function(){
+		$(".register-btn").click(function(){
+			// $("#register-share").css({display:'block'});
+			alert("注册完成，请点击页面右上角的分享按钮分享到朋友圈或微信好友，请已经通过认证的校友为你认证")
+		});
+		// $("#share-clock-btn").click(function(){
+		// 	$("#register-share").css({display:'none'});
+		// })
+	})
+</script>
+<script>
+	//执行一个laydate实例
+	laydate.render({
+		elem: '#date-check1', //指定元素
+		type: 'year'
+	});
+</script>
+</body>
+</html>

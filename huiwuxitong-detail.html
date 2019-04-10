@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reset/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+    <!-- 活动详情开始 -->
+    <div class="huodong-detail-box">
+        <div class="huodong-detail-main">
+            <div class="huiwu-detail-title">您希望母校为您的生活和事业发展提供哪些方面的支持与服务？</div>
+            <p class="fanwei"><span>会务类型：线上开会</span><span>主持人：陈某某</span></p>
+            <p class="fanwei" style="padding-bottom:10px"><span>起止时间：2017-10-11～11-11</span></p>
+
+
+        </div>
+        <!-- huodong-detail-main -->
+
+        <div class="huiyi-biaojue">
+            <div class="huiyitoupianjieguo-title"><span>会议投票结果</span><a href="vote-detail.html">投票</a></div>
+            <dl class="clearfix">
+                <a href="biaojue-jieguo-detail.html">
+                    <dt>1、是否全额减免贫困学生的学费?<i class="fa fa-angle-right"></i></dt>
+                    <dd>同意：11</dd>
+                    <dd>不同意：22</dd>
+                    <dd>部分同意：55</dd>
+                    <dd>总人数：11340</dd>
+                </a>
+            </dl>
+        </div>
+        <!-- huiyi-biaojue -->
+
+        <div class="huiyi-zongjie">
+            <div class="huiyi-zongjie-title"><span>会议总结</span><s>展开<i class="iconfont icon-angledown2"></i></s></div>
+            <div class="huiyi-zongjie-txt">
+                <p>1、本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用周三晚上8-10点，综合楼2楼1、3号2片场地。</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".huiyi-zongjie-title").click(function() {
+                    if ($(".huiyi-zongjie-title s").text() == "收起") {
+                        $(".huiyi-zongjie-title s").text("展开");
+                        $(".huiyi-zongjie-txt").slideDown('slow');
+                        $(".huiyi-zongjie-title s").append("<i class='fa fa-angle-down'></i>")
+                    } else {
+                        $(".huiyi-zongjie-title s").text("收起");
+                        $(".huiyi-zongjie-txt").slideUp('slow');
+                        $(".huiyi-zongjie-title s").append("<i class='fa fa-angle-up'></i>")
+                    }
+
+                })
+            })
+        </script>
+        <div class="huodongjieshao">
+            <div class="huodongjieshao-title"><span>会议详情</span><s>展开<i class="iconfont icon-angledown2"></i></s></div>
+            <div class="huodongjieshao-txt">
+                <p>1、本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用</p>
+                <p>2、活动时间、场地：每周三晚上8-10点，综合楼2楼1、3号2片场地。</p>
+
+            </div>
+            <script type="text/javascript">
+                $(function() {
+                    $(".huodongjieshao-title").click(function() {
+                        if ($(".huodongjieshao-title s").text() == "收起") {
+                            $(".huodongjieshao-title s").text("展开");
+                            $(".huodongjieshao-txt").slideDown('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angledown2'></i>")
+                        } else {
+                            $(".huodongjieshao-title s").text("收起");
+                            $(".huodongjieshao-txt").slideUp('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angle-up'></i>")
+                        }
+
+                    })
+                })
+            </script>
+        </div>
+        <!-- huodongjieshao 活动介绍-->
+
+        <div class="huodong-lueying clearfix">
+            <div class="huodong-lueying-top">
+                <a href="huiyiwendang-list.html">
+                    <span>会议文档</span><i class="iconfont icon-gengduo"></i><b>共12项</b>
+                </a>
+            </div>
+        </div>
+        <!-- 会议文档 huodong-lueying -->
+
+        <div class="huodong-lueying clearfix">
+            <div class="huodong-lueying-top">
+                <a href="huodonglueying.html">
+                    <span>会议掠影</span><i class="iconfont icon-gengduo"></i><b>共12张</b>
+                </a>
+            </div>
+            <div class="huodong-lueying-content">
+                <a href="huodonglueying.html">
+                    <ul>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <!--活动掠影的图片尺寸为：500*400-->
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                        <li><img src="images/jianjie.jpeg" alt=""></li>
+                    </ul>
+                </a>
+            </div>
+            <!--  huodong-lueying-content -->
+        </div>
+        <!-- 活动掠影 huodong-lueying -->
+
+    </div>
+    <!-- 活动详情结束 -->
+
+    <div class="login-baoming">
+        <a href="meeting-summary.html" class="huiyizongjie-btn">会议总结</a>
+    </div>
+
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+</body>
+
+</html>

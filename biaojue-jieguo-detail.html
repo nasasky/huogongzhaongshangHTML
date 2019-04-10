@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="laydate/laydate.js"></script>
+	<title>华工中山校友会</title>
+</head>
+<body>
+ <!-- 查看已表决理事团的 姓名 级别、表决日期、表决结果和留言 -->
+ <!-- 会议表决详情页面开始-->
+<div class="biaojue-result">
+		<div class="top-search"><span class="fa fa-search"></span><input type="text" placeholder="请输入您要查找的内容"></div>
+		<dl>
+			<dt>姓名：张三</dt>
+			<dd>级别：考古系</dd>
+			<dd class="biaojue-time">2017-11-08</dd>
+			<dd>表决结果：同意</dd>
+			<dd>留言：规范和地方都会发个电话发个电话发个电话发给规范和地方都会发个电话发个电话发个电话发给规范和地方
+				都会发个电话发个电话发个电话发给</dd>
+		</dl>
+		<dl>
+				<dt>姓名：张三</dt>
+				<dd>级别：考古系</dd>
+				<dd class="biaojue-time">2017-11-08</dd>
+				<dd>表决结果：同意</dd>
+				<dd>留言：规范和地方都会发个电话发个电话发个电话发给规范和地方都会发个电话发个电话发个电话发给规范和地方
+					都会发个电话发个电话发个电话发给</dd>
+			</dl>
+			<dl>
+					<dt>姓名：张三</dt>
+					<dd>级别：考古系</dd>
+					<dd class="biaojue-time">2017-11-08</dd>
+					<dd>表决结果：不同意</dd>
+					<dd>留言：规范和地方都会发个电话发个电话发个电话发给规范和地方都会发个电话发个电话发个电话发给规范和地方
+						都会发个电话发个电话发个电话发给</dd>
+				</dl>
+				<dl>
+						<dt>姓名：张三</dt>
+						<dd>级别：考古系</dd>
+						<dd class="biaojue-time">2017-11-08</dd>
+						<dd>表决结果：部分同意</dd>
+						<dd>留言：规范和地方都会发个电话发个电话发个电话发给规范和地方都会发个电话发个电话发个电话发给规范和地方
+							都会发个电话发个电话发个电话发给</dd>
+					</dl>
+					<dl>
+							<dt>姓名：张三</dt>
+							<dd>级别：考古系</dd>
+							<dd class="biaojue-time">2017-11-08</dd>
+							<dd>表决结果：同意</dd>
+							<dd>留言：规范和地方都会发个电话发个电话发个电话发给规范和地方都会发个电话发个电话发个电话发给规范和地方
+								都会发个电话发个电话发个电话发给</dd>
+						</dl>
+
+</div>
+  <!-- 会议表决详情页面结束-->
+  <p class="no-more">没有更多了....</p>
+  <div id="gotop"></div><!--返回顶部-->
+  <script type="text/javascript">
+	  $(function(){
+		  $(window).scroll(
+			  function(){
+				  if($(window).scrollTop()>=60){
+					  $("#gotop").fadeIn();
+				  }
+				  else{
+					  $("#gotop").fadeOut(); 
+				  }
+			  }
+		  );
+		  $("#gotop").click(function(){
+			  $('html,body').animate({scrollTop:0},500);
+		  })
+	  })
+  </script>
+</body>
+</html>

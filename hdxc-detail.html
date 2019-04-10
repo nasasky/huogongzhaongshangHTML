@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>华工中山校友会</title>
+    <meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/jqpagination.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/default-skin.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body style="position:relative;">
+    <div class="school-help-title-box">
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>相册详情
+            <a class="iconfont icon-homel shouye" href="index.html"></a>
+        </div>
+    </div>
+
+    <div class="hdxc-detail-content">
+        <div class="hdxc-txt">
+            <h2 class="title">实拍：山东泰安双胞胎姐妹，姐姐身高一米多，妹妹身高六十七厘米</h2>
+            <p class="desc">内容描述内容描述内容秒杀度内容描述内容描述内容秒杀度内容描述内容描述内容秒杀度 内容描述内容描述内容秒杀度内容描述内容描述内容秒杀度内容描述内容描述内容秒杀度
+            </p>
+        </div>
+        <!-- e=hdxc-txt -->
+
+        <div class="xiangce-block">
+            <div class="xiangce-title"><span>相册</span><s>展开<i class="iconfont icon-angledown2"></i></s></div>
+            <div class="demo-gallery xiangce-gallery">
+                <a href="images/help1.png" data-size="1600x1600" data-med="images/help1.png" data-med-size="1024x1024">
+                    <img src="images/help1.png" alt="" />
+                </a>
+                <a href="images/banner1.jpg" data-size="1600x1068" data-med="images/banner1.jpg" data-med-size="1024x1024">
+                    <img src="images/banner1.jpg" alt="" />
+                </a>
+                <a href="images/help1.png" data-size="1600x1600" data-med="images/help1.png" data-med-size="1024x1024">
+                    <img src="images/help1.png" alt="" />
+                </a>
+                <a href="images/help2.png" data-size="1600x1068" data-med="images/help2.png" data-med-size="1024x1024">
+                    <img src="images/help2.png" alt="" />
+                </a>
+                <a href="images/help3.png" data-size="1600x1068" data-med="images/help3.png" data-med-size="1024x1024">
+                    <img src="images/help3.png" alt="" />
+                </a>       <a href="images/help1.png" data-size="1600x1600" data-med="images/help1.png" data-med-size="1024x1024">
+                    <img src="images/help1.png" alt="" />
+                </a>
+            </div>
+            <!-- demo-gallery -->
+        </div>
+        <!-- e=xiangce-block -->
+
+        <script type="text/javascript">
+            $(function() {
+                $(".xiangce-title").click(function() {
+                    if ($(".xiangce-title s").text() == "收起") {
+                        $(".xiangce-title s").text("展开");
+                        $(".xiangce-gallery").slideDown('slow');
+                        $(".xiangce-title s").append("<i class='iconfont icon-angledown2'></i>")
+                    } else {
+                        $(".xiangce-title s").text("收起");
+                        $(".xiangce-gallery").slideUp('slow');
+                        $(".xiangce-title s").append("<i class='iconfont icon-angle-up'></i>")
+                    }
+                })
+
+                $(".video-title").click(function() {
+                    if ($(".video-title s").text() == "收起") {
+                        $(".video-title s").text("展开");
+                        $(".video-gallery").slideDown('slow');
+                        $(".video-title s").append("<i class='iconfont icon-angledown2'></i>")
+                    } else {
+                        $(".video-title s").text("收起");
+                        $(".video-gallery").slideUp('slow');
+                        $(".video-title s").append("<i class='iconfont icon-angle-up'></i>")
+                    }
+                })
+            })
+        </script>
+
+        <div class="video-block">
+            <div class="video-title"><span>视频库</span><s>展开<i class="iconfont icon-angledown2"></i></s></div>
+            <div class=" video-gallery">
+                <video src="video/video.mp4" poster="images/video-bg.jpg"></video>
+                <video src="video/mov_bbb.mp4" poster="images/weixinqun-top.jpg"></video>
+                <video src="video/video.mp4" poster="images/news-more-item.jpg"></video>
+                <video src="video/video.mp4" poster="images/hudong-item.jpg"></video>
+                <video src="video/video.mp4" poster="images/activity-item.jpg"></video>
+                <video src="video/video.mp4" poster="images/news-detail.jpg"></video>
+            </div>
+            <!-- video-gallery -->
+        </div>
+        <!-- e=xiangce-block -->
+    </div>
+    <!-- e=hdxc-detail-content -->
+
+    <div class="video-mask">
+        <div class="video-content">
+            <video src="" id="videosrc" autoplay="autoplay" controls="controls"></video>
+            <div class="videoclose-btn">
+                <img src="images/close.png" alt="">
+            </div>
+            <!-- e=close-btn -->
+        </div>
+        <!-- e=video-content -->
+    </div>
+    <!-- e=video-mask -->
+
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() >= 60) {
+                        $("#gotop").fadeIn();
+                    } else {
+                        $("#gotop").fadeOut();
+                    }
+                }
+            );
+            $("#gotop").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 点击查看视频弹框
+            $(".video-mask").hide(); //隐藏层
+            $(".video-gallery video").click(function() {
+                var srcvideo = $(this).attr("src");
+                $("#videosrc").attr("src", srcvideo);
+                $(".video-mask").fadeIn("fast");
+            })
+            $(".videoclose-btn").click(function() {
+                $(".video-mask").hide();
+            })
+        })
+    </script>
+    <script src="js/jquery.jqpagination.min.js"></script>
+    <script src="js/fenye.chushihua.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/shoujitupian.js"></script>
+</body>
+
+</html>

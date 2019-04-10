@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="member-detail-box">
+    <div class="member-detail-top">人数：<span>25</span></div>
+    <div class="member-item clearfix">
+        <div class="member-item-img fl"><img src="images/touxiang.jpg" alt=""></div>
+        <div class="member-item-text fl">
+        <p class="member-item-time">2017-11-03</p>
+        <p class="member-item-name">张三</p>
+        <p class="member-item-number">随行人数：12</p>
+        </div>
+    </div>
+
+    <div class="member-item clearfix">
+            <div class="member-item-img fl"><img src="images/touxiang.jpg" alt=""></div>
+            <div class="member-item-text fl">
+            <p class="member-item-time">2017-11-03</p>
+            <p class="member-item-name">张三</p>
+            <p class="member-item-number">随行人数：12</p>
+            </div>
+        </div> 
+        
+        <div class="member-item clearfix">
+                <span class="member-item-img"><img src="images/touxiang.jpg" alt=""></span>
+                <span class="member-item-name">张三</span>
+                <span class="member-item-time">2017-11-03</span>
+            </div>
+            <div class="member-item clearfix">
+                    <span class="member-item-img"><img src="images/touxiang.jpg" alt=""></span>
+                    <span class="member-item-name">张三</span>
+                    <span class="member-item-time">2017-11-03</span>
+                </div>
+                <div class="member-item clearfix">
+                        <span class="member-item-img"><img src="images/touxiang.jpg" alt=""></span>
+                        <span class="member-item-name">张三</span>
+                        <span class="member-item-time">2017-11-03</span>
+                    </div>
+                    <div class="member-item clearfix">
+                            <span class="member-item-img"><img src="images/touxiang.jpg" alt=""></span>
+                            <span class="member-item-name">张三</span>
+                            <span class="member-item-time">2017-11-03</span>
+                        </div>
+                        <div class="member-item clearfix">
+                                <span class="member-item-img"><img src="images/touxiang.jpg" alt=""></span>
+                                <span class="member-item-name">张三</span>
+                                <span class="member-item-time">2017-11-03</span>
+                            </div>
+                
+</div>
+<p class="no-more">没有更多了....</p>
+<div id="gotop"></div>
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(
+            function(){
+                if($(window).scrollTop()>=60){
+                    $("#gotop").fadeIn();
+                }
+                else{
+                    $("#gotop").fadeOut(); 
+                }
+            }
+        );
+        $("#gotop").click(function(){
+            $('html,body').animate({scrollTop:0},500);
+        })
+    })
+</script>
+<!-- member-detail-box-->
+    <!-- <footer>
+            <p>地址：广东省中山国发股份规范</p>
+            <p> 京ICP备546576767号-6 &copy;版权所有:华工中山校友会</p>
+        </footer> -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+ 
+</head>
+<body style="background:#fff;">
+        <div class='school-help-title-box'>
+        <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>会议总结<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+        </div>
+    <!-- 会长、秘书长、主持人（一般是轮值会长）会议总结 其他成员没有会议总结功能-->
+<div class="meeting-summary-box">
+    <div class="meeting-summary-title">是否全额减免贫困学生的学费?</div><!-- meeting-summary-title 会议标题-->
+    <div class="meeting-title-desc"><span>起止时间：2017-10-11～11-11</span><span>线上会议</span></div>
+    <div class="meeting-summary-txt clearfix">
+        <span>会议总结：</span><textarea name="" id="" placeholder="请输入您的会议总结内容"></textarea>
+    </div>
+
+    <button class="meeting-submit-btn">提交</button>
+</div><!-- meeting-summary-box -->
+
+    <div id="gotop"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(window).scrollTop()>=60){
+                        $("#gotop").fadeIn();
+                    }
+                    else{
+                        $("#gotop").fadeOut(); 
+                    }
+                }
+            );
+            $("#gotop").click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            })
+        })
+    </script>
+</body>
+</html>

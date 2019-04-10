@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <link rel="stylesheet" href="css/jqpagination.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	
+</head>
+<body>
+   
+	
+    <!-- 活动结束 -->
+    <div id="wrapper" style="margin-bottom:55px;">
+			<div class="gigantic pagination">
+			    <a href="#" class="first" data-action="first">首页</a>
+			    <a href="#" class="previous" data-action="previous">上页</a>
+			    <input type="text" readonly="readonly" value="第几页"/>
+			    <a href="#" class="next" data-action="next">下页</a>
+			    <a href="#" class="last" data-action="last">末页</a>
+			</div>
+			<div class="clearfix"></div> <!-- should probably have a shower after that -->
+            <div style="text-align:center;clear:both;margin-top:50px"></div>
+    </div>
+
+   
+        
+        <!-- <p class="no-more">没有更多了....</p> -->
+        <div id="gotop"></div>
+        <script type="text/javascript">
+            $(function(){
+                $(window).scroll(
+                    function(){
+                        if($(window).scrollTop()>=60){
+                            $("#gotop").fadeIn();
+                        }
+                        else{
+                            $("#gotop").fadeOut(); 
+                        }
+                    }
+                );
+                $("#gotop").click(function(){
+                    $('html,body').animate({scrollTop:0},500);
+                })
+            })
+        </script>
+
+        <script src="js/jquery.jqpagination.min.js"></script>
+        <script src="js/fenye.chushihua.js"></script>
+</body>
+</html>

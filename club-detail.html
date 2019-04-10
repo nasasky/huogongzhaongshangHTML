@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华工中山校友会</title>
+	<meta http="X-UA-Compatible" content="ie=dege,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/iconfont.css">
+	<!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+	<link rel="stylesheet" href="css/reset/css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+        <div class='school-help-title-box'>
+            <div class="school-help-title"><a href="javascript:history.back()" class="iconfont icon-fanhui return">返回</a>详情<a class="iconfont icon-homel shouye" href="index.html"></a></div>
+        </div>
+<div class="club-detail-box">
+    <div class="club-detail-top">
+        <span class="club-detail-img"><img src="images/club-img.jpg" alt=""></span><br>
+        <span class="club-detail-img-title">求是夜跑会</span><br>
+        <span class="category">所属：中山华工校友会</span><br>
+    </div>
+
+    <div class="huodongjieshao">
+            <div class="huodongjieshao-title"><span>简介</span><s>展开<i class='iconfont icon-angledown2'></i></s></div>
+            <div class="huodongjieshao-txt">
+                <p>本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用
+                        本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用
+                        本次活动用球统一提供，自带球拍和水，最好自备旧球练球时用
+                </p>
+            </div>
+            <script type="text/javascript">
+                $(function(){
+                    $(".huodongjieshao-title").click(function(){
+                        if($(".huodongjieshao-title s").text()=="收起"){
+                            $(".huodongjieshao-title s").text("展开");
+                            $(".huodongjieshao-txt").slideDown('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angledown2'></i>")
+                        }
+                        else{
+                            $(".huodongjieshao-title s").text("收起");
+                            $(".huodongjieshao-txt").slideUp('slow');
+                            $(".huodongjieshao-title s").append("<i class='iconfont icon-angle-up'></i>")
+                        }
+                            
+                    })
+                })
+           </script></div><!-- huodongjieshao 活动介绍-->
+<div class="member"><span class="member-left">成员</span><i class="member-line"></i>
+<div class="touxaing">
+    <a href="member-detail.html">
+        <div class="touxiang-img">
+            <img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""><img src="images/touxiang.jpg" alt=""> <img src="images/touxiang.jpg" alt="">
+            <img src="images/touxiang.jpg" alt=""> <img src="images/touxiang.jpg" alt="">
+         </div>
+          <i class="iconfont icon-gengduo"></i>
+         <span>12人</span>
+     </a>   
+ </div><!-- touxaing -->
+</div>
+
+<div class="club-detail-sports">
+    <div class="activity-top">
+        <a href="">
+            <span class="activity-left">活动</span>
+            <span class="changshu">1225场<i class="iconfont icon-gengduo"></i></span>
+        </a>
+    </div><!-- activity-top -->
+
+    <ul class="club-detail-sports-content">
+        <li class="club-detail-sports-item clearfix"><a href="">
+            <span class="club-detail-sports-item-txt">快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦</span>
+            <span class="club-detail-sports-item-time">11-03</span>
+        </a></li>
+
+        <li class="club-detail-sports-item clearfix"><a href="">
+                <span class="club-detail-sports-item-txt">快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦</span>
+                <span class="club-detail-sports-item-time">11-03</span>
+            </a></li>
+
+            <li class="club-detail-sports-item clearfix"><a href="">
+                    <span class="club-detail-sports-item-txt">快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦快来跑步啦</span>
+                    <span class="club-detail-sports-item-time">11-03</span>
+                </a></li>
+    </ul>
+
+</div>
+
+
+
+
+
+</div>
+
+<!-- <p class="no-more">没有更多了....</p> -->
+<div id="gotop"></div>
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(
+            function(){
+                if($(window).scrollTop()>=60){
+                    $("#gotop").fadeIn();
+                }
+                else{
+                    $("#gotop").fadeOut(); 
+                }
+            }
+        );
+        $("#gotop").click(function(){
+            $('html,body').animate({scrollTop:0},500);
+        })
+    })
+</script>
+<!-- club-detail-box-->
+    <!-- <footer>
+            <p>地址：广东省中山国发股份规范</p>
+            <p> 京ICP备546576767号-6 &copy;版权所有:华工中山校友会</p>
+        </footer> -->
+</body>
+</html>
